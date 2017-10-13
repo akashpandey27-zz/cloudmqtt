@@ -1,6 +1,11 @@
 var clientId = "ws" + Math.random();
 
-client = new Paho.MQTT.Client("m10.cloudmqtt.com", 33670,clientId); 
+//Get the details from CloudMQTT CloudMQTT Console *** https://api.cloudmqtt.com/sso/cloudmqtt/console **** 
+var server_name = "m10.cloudmqtt.com";
+var username = "ryflwpvz";
+var password = "IR6JdpAccm2F"
+
+client = new Paho.MQTT.Client(server_name, 33670,clientId); 
  
 // set callback handlers
 client.onConnectionLost = onConnectionLost;
@@ -20,11 +25,11 @@ client.connect(options);
 // called when the client connects
 function onConnect() {
 	// Once a connection has been made, make a subscription and send a message.
-	console.log("onConnect");
-	client.subscribe("/cloudmqtt");
-	message = new Paho.MQTT.Message("Hello CloudMQTT");
-	message.destinationName = "/cloudmqtt";
-	client.send(message); 
+	//console.log("onConnect");
+	//client.subscribe("/cloudmqtt");
+	//message = new Paho.MQTT.Message("Hello CloudMQTT");
+	//message.destinationName = "/cloudmqtt";
+	//client.send(message); 
 }
 
 function doFail(e){
