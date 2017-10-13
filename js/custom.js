@@ -1,9 +1,9 @@
 var clientId = "ws" + Math.random();
 
 //Get the details from CloudMQTT CloudMQTT Console *** https://api.cloudmqtt.com/sso/cloudmqtt/console **** 
-var server_name = "m10.cloudmqtt.com";
-var username = "ryflwpvz";
-var password = "IR6JdpAccm2F"
+var server_name = "..........";
+var username = "..........";
+var password = ".........."
 
 client = new Paho.MQTT.Client(server_name, 33670,clientId); 
  
