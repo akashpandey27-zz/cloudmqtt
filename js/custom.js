@@ -13,8 +13,8 @@ client.onMessageArrived = onMessageArrived;
 
 var options = {
 	useSSL: true,
-	userName: "ryflwpvz",
-	password: "IR6JdpAccm2F",
+	userName: username,
+	password: password,
 	onSuccess:onConnect,
 	onFailure:doFail
 }
