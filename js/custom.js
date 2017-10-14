@@ -4,8 +4,9 @@ var clientId = "ws" + Math.random();
 var server_name = "..........";
 var username = "..........";
 var password = ".........."
+var portnum = 33670;
 
-client = new Paho.MQTT.Client(server_name, 33670,clientId); 
+client = new Paho.MQTT.Client(server_name, portnum,clientId); 
  
 // set callback handlers
 client.onConnectionLost = onConnectionLost;
